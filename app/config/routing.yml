@@ -1,0 +1,31 @@
+forum:
+    resource: "@ForumBundle/Resources/config/routing.yml"
+    prefix:   /
+forum_answers:
+    resource: "@ForumBundle/Controller/AnswerController.php"
+    type:     annotation
+forum_question:
+    resource: "@ForumBundle/Controller/QuestionController.php"
+    type:     annotation
+evenement_demandeevenement:
+    resource: "@EvenementBundle/Controller/DemandeevenementController.php"
+    type:     annotation
+
+evenement_evenement:
+    resource: "@EvenementBundle/Controller/EvenementController.php"
+    type:     annotation
+
+evenement:
+    resource: "@EvenementBundle/Resources/config/routing.yml"
+    prefix:   /
+
+evenement_club:
+    resource: "@EvenementBundle/Controller/ClubController.php"
+    type:     annotation
+
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
